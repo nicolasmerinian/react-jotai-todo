@@ -1,0 +1,55 @@
+.Todo {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: .2rem;
+}
+
+.Todo:hover {
+    background-color: #EEE;
+}
+
+.todo-controls {
+    display: flex;
+    flex-direction: row;
+}
+
+.todo-complete {
+    height: 1.5rem;
+    user-select: none;
+    width: 1.5rem;
+}
+
+.todo-complete:hover {
+    background-color: rgb(202, 255, 212);
+    cursor: pointer;
+}
+
+.todo-complete:active {
+    background-color: rgb(183, 255, 194);
+}
+
+.todo-completed .todo-complete {
+    color: green;
+}
+
+.todo-delete {
+    color: red;
+    height: 1.5rem;
+    user-select: none;
+    width: 1.5rem;
+}
+
+.todo-delete:hover {
+    background-color: rgb(255, 202, 202);
+    cursor: pointer;
+}
+
+.todo-delete:active {
+    background-color: rgb(255, 183, 183);
+}
+
+.todo-completed .todo-title {
+    text-decoration: line-through;
+}
